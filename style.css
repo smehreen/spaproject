@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    margin:0;
+	padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+                                
+    background-color:#063;
+}
+.container{
+ margin:0px auto;
+ padding:0;
+ width:960px;
+}
+
+.banner{
+ margin:0px auto;
+ padding:50px 0 25px 0;	
+ text-align:center;
+ width:960px;
+ background-image:url(movie2012.jpg);
+	}
+.banner h1{
+	margin: 0;
+    padding-top: 40px;
+    text-align: center;
+	}
+.wave {
+ position: relative;
+ overflow: visible;
+                        }
+.wave span {
+ position: relative;
+ color: #F00;
+ background-color: #FF0;
+                        }
+table {
+    font-family: arial;
+    text-align: left;
+}
+table td {
+	padding:6px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+
+	background: #fafafa;	
+}
+table td #rank {
+	text-align:center;
+	}
+table th {
+	padding:11px 15px 12px 15px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #e0e0e0;
+
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+}
+
+#searchbox input{
+margin:0 320px 0 320px;
+padding:10px 0 10px 10px;
+width:320px;
+font-size:20px;
+	}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html ng-app>
+<head>
+<meta charset="utf-8">
+<title>Top 100 movies list</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+<script src="controller.js"></script>
+<script src="wave.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<div class="container">
+
+<div class="banner">
+<h1 id="wave-b">Top 100 movies</h1>
+<form id="searchbox">
+ <input ng-model="searchBox" type="text" placeholder="Search for movie">
+</form>
+</div>
+
+<div ng-controller="SampleCtrl">
+<table>
+ <thead>
+  <th>Rank</th>
+  <th>Movie Title</th>
+  <th>ID</th>
+ </thead>
+ <tbody>
+  <tr ng-repeat="movie in movies | filter: searchBox">
+   
+   <td>{{ movie.rank }}</td>
+   <td>{{ movie.title }}</td>
+   <td>{{movie.id}}</td>
+  </tr>
+  
+  <tr>
+   
+   <td><input ng-model="addRank" type="text" placeholder="Enter Rank"></td>
+   <td><input ng-model="addTitle" type="text" placeholder="Enter Movie Title"></td>
+   <td><button ng-click="addMovie()"> Add </button></td>
+   <td><button ng-click="deleteMovie()">Delete</td>
+  </tr>
+ </tbody>
+</table>
+ </div>
+</div>
+</body>
+</html>
